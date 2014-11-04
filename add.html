@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <meta name="description" content="Devan Huapaya's Sprint 2014 Beatdown Dashboard">
+
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <link rel='stylesheet' href='style.css'>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+        <title>Fall 2014</title>
+        <link rel="shortcut icon" href="images/AMLogo.gif" />
+        <link rel="shortcut icon" href="images/AMLogo.ico" />
+    </head>
+
+    <body>
+        <header>
+            <!-- Header Menu -->
+            <nav>
+                 <ul >
+                    <h1 id="header"><font class="beatdown">Syllabye</font></h1>
+                    <li class="pure-menu-selected" class="menu-item"><a href="#">Dashboard</a></li>
+                    <li><a href="#" id="class-menu-item" class="menu-item">Class</a></li>
+                    <li><a href="#" id="account-menu-item" class="menu-item">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="account-menu-item-child" class="child-menu module">
+            <ul>
+                <li class="child-menu-item">
+                    Edit Account Settings
+                </li>
+                <li class="child-menu-item">    
+                    Logout
+                </li>
+            </ul>
+        </div>
+
+        <div id="class-menu-item-child" class="child-menu module">
+            <ul>
+                <li class="child-menu-item">
+                    Edit Class Info
+                </li>
+                <li class="child-menu-item">
+                    Add Class
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-nav beatdown">
+            <span class="header">Syllabye</span>
+            <span class="mobile-menu-icon"><span class="fa fa-bars"></span> Menu</span>
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="mobile-menu-content">
+                <li>
+                    Account 
+
+                    <ul>
+                        <li>
+                            Edit Account Settings
+                        </li>
+                        <li>
+                            Logout
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                        Class
+                    <ul>
+                        <li>
+                            Edit Class Info
+                        </li>
+                        <li>
+                            Add Class
+                        </li>
+                    </ul>
+                </li>
+            </li>
+        </div>
+
+        <section id="add-class-main-container" class="main-container">
+
+            <!--Class Documents-->
+            <div class="module col1">
+                <div class="module-content">
+                    <b class="listTitle">Class Info</b>
+
+                    <form class="pure-form pure-form-stacked">
+                        <fieldset>
+
+                            <div class="pure-g">
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="syllabus-url">Syllabus Url</label>
+                                    <input id="syllabus-url" type="text">
+                                    <button type="submit" class="pure-button pure-button-primary">Get Info</button>
+                                </div>
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="class-name">Class Name</label>
+                                    <input id="class-name" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="last-name">Class Web Page</label>
+                                    <input id="last-name" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">Proffessor Name</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">Proffessor Email</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">Proffessor Office Location</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">Proffessor Office Hours</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">TA Name</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">TA Email</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">TA Office Location</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">TA Office Hours</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">Grade Distrobution</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="city">Notes</label>
+                                    <input id="city" type="text">
+                                </div>
+
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <label for="state">State</label>
+                                    <select id="state" class="pure-input-1-2">
+                                        <option>AL</option>
+                                        <option>CA</option>
+                                        <option>IL</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <label for="terms" class="pure-checkbox">
+                                <input id="terms" type="checkbox"> I've read the terms and conditions
+                            </label>
+
+                            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                        </fieldset>
+                    </form>
+
+            </div><!-- Class Documents End -->
+
+        </section>
+    </body>
+</html>

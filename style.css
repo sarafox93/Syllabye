@@ -1,0 +1,360 @@
+/*Overall Style*/
+html, body{
+    margin: 0px; padding: 0px; border: 0px;
+    font-family: 'American Typewriter', Georgia, serif;
+}
+html{
+    background-color:#F2F2F2;
+    height: 101vh;
+}
+
+/* Nav Menu
+=======================================================================*/
+nav{
+    /*position: absolute;*/
+    /*display: block;*/
+    width: 100%;
+    top:0;
+
+    margin-bottom: 3%;
+    background-color: rgba(14,243,238,1);
+    color: #F5F5F5;
+    font-size: 1.5em;
+
+    vertical-align: middle;
+    float: right;
+    right: 0;
+    text-align: right;  
+}
+nav ul{
+    padding: 0;
+    margin: 1% 3%;
+}
+nav li{
+    display: inline-block;
+    color: whitesmoke;
+    line-height: 2.8em;
+}
+nav li{
+    margin: 0 2%;
+}
+h1{
+    margin: 0;
+    float: left;
+
+    font-weight: lighter;
+}
+
+.beatdown{
+    font-family: 'Raleway', cursive;
+    font-weight: 300;
+}
+
+/* Section - Main */
+section{
+    background: #F5F5F5;
+    top:0;
+    bottom:0;
+    height:100%;
+    font-size:1.3em;
+}
+.child-menu{
+  font-family: 'Raleway', cursive;
+    position: fixed;
+    z-index: 5;
+    display: none;
+    height: 0px;
+    opacity: 0;
+    text-align: right;
+    width: 10%;
+    min-width: 11em;
+
+    /*Trasitions*/
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.menu-item{
+    margin: 5%;
+}
+ul{
+    padding: 0;
+}
+.child-menu li{
+    display: line-block;
+    /*Trasitions*/
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+}
+.child-menu li:hover{
+  background: rgba(0,0,0,0.25);
+}
+.child-menu-item{
+  padding: 3% 5%;
+}
+.child-menu-showing{
+    height: auto;
+    display: block;
+    opacity: 1;
+}
+.child-menu ul{
+  padding: 0;
+  margin: 0;
+} 
+.child-menu li{
+  cursor: pointer;
+  font-size: 1.3em;
+  /*line-height: 2em;*/
+}
+.child-menu li:not(:last-child){
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+} 
+#account-menu-item-child{
+    min-width: 15em;
+}
+#class-menu-item-child{
+    min-width: 30em;
+}
+
+/* Mobile Menu
+=======================================================================*/
+.mobile-nav{
+    display: none;
+    width: 100%;
+    background: coral;
+    position: fixed;
+    font-size: 2em;
+    clear: both;
+    z-index: 10;
+}
+.mobile-nav .header{
+    display: inline-block;
+    margin: 3%;
+    padding: 1%;
+}
+.mobile-menu-icon{
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 3%;
+    padding: 1%;
+    color: whitesmoke;
+    float:right;
+    cursor: pointer;
+}
+.mobile-menu{
+    display: none;
+    position: fixed;
+    font-size: 2em;
+    height: 100%;
+    width: 100%;
+
+    z-index: 9;
+
+    background: #FCFCFC;
+}
+.mobile-menu-content{
+    margin-top: 3.5em;
+    height: 100%;
+    width: 100%;
+}
+.mobile-menu li:not(:first-child){
+  /*border-top: 1px solid gray;*/
+}
+
+.mobile-menu-content > li > ul {
+  margin-left: 5%;
+}
+.mobile-menu li{
+  cursor: pointer;
+}
+
+/* Modules
+=======================================================================*/
+.module{
+    margin-bottom: 5%;
+    text-decoration: none;
+    background: #FCFCFC;
+
+   box-shadow:   0px 2px 2px rgba(0,0,0,0.3),
+		 0px 8px 8px rgba(0,0,0,0.2);
+}
+.module-content{
+    margin:3%;
+}
+.ctitle:hover{
+    cursor: pointer;
+}
+#classDocuments{
+    width: 50%;
+    margin: 0% 5%;
+}
+.left{
+    float: left;
+    width: 35%;
+    margin-left: 5%;   
+}
+.right{
+  float: right;
+}
+.full-width{
+    width: 100%;
+}
+.info{
+    margin: 1%;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.info:before {
+  content: "";
+  position:absolute;
+  z-index: 1;
+  width:96%;
+  top: -10px;
+  height: 10px;
+  left: 2%;
+  border-radius: 100px / 5px;
+  box-shadow:0 0 18px rgba(0,0,0,0.6);
+}
+.infoHeader{
+    text-align:right;
+    margin-right: 1%;
+    display: block;
+    float:left;
+    clear:left;
+    overflow: auto;
+    min-width: 10vh;
+    width: 20%;
+}
+.infoSection{
+    display:block;
+    float:left;
+    clear: right;
+    overflow: auto;
+    color: #555;
+    min-width: 30vh;
+}
+.listTitle{
+    font-size: 1.5em;
+    line-height: 1.6;
+    color:#555;
+
+   /**/
+}
+.ctitle{
+    margin-top: 2%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* Upcoming Table
+=======================================================================*/
+.upcoming-table{
+    width: 100%;
+}
+.upcoming-table tr{
+    border: 1px solid black;
+}
+.upcoming-table td{
+    border: 1px solid black;
+    /*margin: */
+}
+.ut-cell {
+    margin: 5%;
+}
+.urgent{
+  background: rgba(231, 76, 60, 0.75);
+  background: rgba(231, 76, 60, 0.9);
+}
+.impending{
+  background: rgba(241, 196, 15, 0.75);
+  background: rgba(241, 196, 15, 0.9);
+}
+
+
+li{
+    list-style-type: none;
+    color:#555;
+}
+/*Class Specific Coloring*/
+.c436{color:#1abc9c;}
+.c441{color:#e74c3c;}
+.e454{color:#3498db;}
+.e482{color:#9b59b6;}
+
+
+a{ text-decoration: none; color:inherit;}
+a:hover{text-decoration: underline;}
+
+
+.col1{
+  width: 80%;
+  margin: 2.5% 10%;
+}
+.col2{
+  width: 40%;
+  margin: 2.5% 5%;
+}
+.col3{
+  /*width: margin%;*/
+  /*30: 2.5% 10%;*/
+}
+.col4{
+  width: 80%;
+  margin: 2.5% 10%;
+}
+
+/* Laptop/Tablet (1024px) */
+@media only screen and  (min-width: 570px) {
+  .mobile-menu{
+    display: none !important;
+  }
+}
+@media only screen and  (max-width: 750px) {
+    nav{
+        text-align: center;
+    }
+    .module{
+        width: 90% !important;
+        margin: 2.5% 5%;
+    }
+    .child-menu{
+        width: 25% !important;
+        margin: 0;
+    }
+    #classDocuments{
+        margin: 2.5% 5%
+    }
+    .module:first-child{
+        margin-top: 7.5%;
+    }
+}
+
+/* Laptop/Tablet (1024px) */
+@media only screen and  (max-width: 570px) {
+    nav{
+        display: none;
+    }
+    .main-container{
+        position: absolute;
+        margin-top: 4em;
+        width: 100%;
+    }
+    .mobile-nav{
+        display: block;
+    }
+
+    .col1, .col2, .col3, .col4{
+      width: 90%;
+      margin: 2.5% 5%;
+    }
+
+}
