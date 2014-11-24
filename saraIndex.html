@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <meta name="description" content="Devan Huapaya's Sprint 2014 Beatdown Dashboard">
+
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <link rel='stylesheet' href='style.css'>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+        <title>Fall 2014</title>
+        <link rel="shortcut icon" href="images/AMLogo.gif" />
+        <link rel="shortcut icon" href="images/AMLogo.ico" />
+    </head>
+
+    <body>
+        <header>
+            <!-- Header Menu -->
+            <nav>
+                 <ul >
+                    <h1 id="header"><font class="beatdown">Syllabye</font></h1>
+					<h5 id="greeting"><font class="beatdown">Hello Sara</font></h5>
+                    <li class="pure-menu-selected" class="menu-item"><a href="#">Dashboard</a></li>
+                    <li><a href="#" id="class-menu-item" class="menu-item">Class</a></li>
+                    <li><a href="#" id="account-menu-item" class="menu-item">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="account-menu-item-child" class="child-menu module">
+            <ul>
+                <li class="child-menu-item">
+                    Edit Account Settings
+                </li>
+                <li class="child-menu-item">    
+                    Logout
+                </li>
+            </ul>
+        </div>
+
+        <div id="class-menu-item-child" class="child-menu module">
+            <ul>
+                <li class="child-menu-item">
+                    Edit Class Info
+                </li>
+                <li class="child-menu-item">
+                    <form class="pure-form">
+                        <fieldset>
+                            <div class="pure-g">
+                                <div class="pure-u-1">
+                                    <input id="syllabus-url" placeholder="syllabus url" type="text">
+                                    <button type="submit" class="pure-button pure-button-primary">Add Class</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="mobile-nav beatdown">
+            <span class="header">Syllabye</span>
+            <span class="mobile-menu-icon"><span class="fa fa-bars"></span> Menu</span>
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="mobile-menu-content">
+                <li>
+                    Account 
+
+                    <ul>
+                        <li>
+                            Edit Account Settings
+                        </li>
+                        <li>
+                            Logout
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                        Class
+                    <ul>
+                        <li>
+                            Edit Class Info
+                        </li>
+                        <li>
+                            Add Class
+                        </li>
+                    </ul>
+                </li>
+            </li>
+        </div>
+
+        <section class="main-container">
+
+            <!--Upcomming Notifications-->
+            <div class="module left" id="upcoming">
+                <div class="module-content">
+                    <b class="listTitle">This Week</b>
+                        <!--Elearning-->
+                       <table class="pure-table full-width">
+                           <!--  <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Make</th>
+                                    <th>Model</th>
+                                    <th>Year</th>
+                                </tr>
+                            </thead> -->
+
+                            <tbody>
+                                <tr class="urgent">
+                                    <td>103- Still Life Art Project</td>
+                                    <td>12/2/14</td>
+                                </tr>
+								<tr class="urgent">
+                                    <td>436 - Final Project Presentation </td>
+                                    <td>12/2/14</td>
+                                </tr>
+                                <tr class="impending">
+                                    <td>411 - HW6 due</td>
+                                    <td>12/8/14</td>
+                                </tr>
+                                <tr class="impending">
+                                    <td>474 - Personal Web page</td>
+                                    <td>12/8/14</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div> <!-- Upcoming Notifications End -->
+
+            <!--Class Documents-->
+            <div class="module right" id="classDocuments">
+                <div class="module-content">
+                    <b class="listTitle">Class Info</b>
+
+                    <!--Software Engineering-->
+                        <p class="class ctitle c436" id="c436">
+                            436 - Computer Human Interaction
+                        </p>
+                        <!--Info Wrapper-->
+                        <div class="c436 info-wrapper">
+                            <!--Class Info-->
+                            <div class="class info">
+
+                                    <!--Proffessor Info-->
+                                    <div class="infoHeader c436"><h4>Prof: </h4></div>
+                                    <div class="infoSection">
+                                        <p>
+                                            <u>Dr. Frank Shipman</u><br>
+                                            HRBB 404<br>
+                                            Email: shipman@cse.tamu.edu<br>
+                                            Office Hours: TBA (oba)<br>
+                                        </p>
+                                    </div>
+
+                                    <!--TA Info-->
+                                    <div class="infoHeader c436"><h4>TA: </h4></div>
+                                    <div class="infoSection">
+                                        <p>
+                                            None.
+                                        </p>
+                                    </div>
+
+                                    <!--Grade Info-->
+                                    <div class="infoHeader c436"><h4>Grades: </h4></div>
+                                    <div class="infoSection">
+                                        Exams 40%<br>
+                                        Team Project 25%<br>
+                                        Short Assignments 25%<br>
+                                        Class Participation 10%<br>
+                                    </div>
+
+                                    <!--Notes-->
+                                    <!-- <div class="infoHeader c436"><h4>Notes: </h4></div> -->
+                                    <div class="infoSection">
+                                        <p>
+                                        </p>
+                                    </div>
+                        </div> <!-- Class Info End -->
+                    </div><!-- Info Wrapper End -->
+                    <ul>
+                        <li>
+                            <a href="http://www.csdl.tamu.edu/~shipman/courses/cpsc436/home.html" target="_blank" class="class c436">Course Page</a>
+                        </li>
+                    </ul>
+
+                    <!--Computer Graphics-->
+                    <p class="class ctitle c411" id="c411">
+                        411 - Design and Analysis of Algorithms
+                    </p>
+
+                     <!--Info Wrapper-->
+                    <div class="c411 info-wrapper">
+                        <!--Class Info-->
+                        <div class="class info">
+                                <!--Proffessor Info-->
+                                <div class="infoHeader c411"><h4>Prof: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        <u>Dr. Jennifer Welch</u><br>
+                                        HRBB 425G<br>
+                                        Tel: (979)845-5076<br>
+                                        Email: welch@cs.tamu.edu<br>
+                                        Office Hours: T 2-3:30pm, R 2:00-3:30 (oba)<br>
+                                    </p>
+                                </div>
+
+                                <!--TA Info-->
+                                <div class="infoHeader c411"><h4>TA: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        <u>Yin Qu</u><br>
+                                        Teague 225C (knock on door)<br>
+                                        Email: quyin@cs.tamu.edu<br>
+                                        Office Hours: T 10-11:30am, R 10am-noon
+                                    </p>
+                                </div>
+
+                                <!--Grade Info-->
+                                <div class="infoHeader c411"><h4>Grades: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        Weekly Quizzes 10%<br>
+										Homeworks 30%<br>
+										Culture Reports 10%<br>
+                                        Exams 15%<br>
+                                        Final 20%<br>
+                                    </p>
+                                </div>
+
+                                <!--Notes-->
+                                <div class="infoHeader c411"><h4>Notes: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                       Cover page for all assignments
+                                        <!-- Insert Class Notes Here -->
+                                    </p>
+                                </div>
+                        </div> <!-- Class Info End -->
+                    </div><!-- Info Wrapper End -->
+
+                    <ul>
+                        <li>
+                            <a href="https://parasol.tamu.edu/~welch/teaching/411.f14/#syllabus" target="_blank" class="class c411">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="https://parasol.tamu.edu/~welch/teaching/411.f14/" target="_blank" class="class c411">Course Page</a>
+                        </li>
+                    </ul>
+
+                    <!--Microcomputer Systems-->
+                    <p class="class ctitle e103" id="e103">
+                        103 - Design 1
+                    </p>
+
+                    <!--Info Wrapper-->
+                    <div class="e103 info-wrapper">
+                        <!--Class Info-->
+                        <div class="class info">
+                                <!--Proffessor Info-->
+                                <div class="infoHeader e103"><h4>Prof: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        <u>Morgan Jenks</u><br>
+                                        PAV 112A <br>
+                                        Tel: (936)662-4522<br>
+                                        Email: morganjenks@tamu.edu<br>
+                                        Office Hours:  By Appointment<br>
+                                    </p>
+                                </div>
+
+                                <!--TA Info-->
+                                <div class="infoHeader e454"><h4>TA: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        <u>N/A</u><br>                
+                                   </p>
+                                </div>
+
+                                <!--Grade Info-->
+                                <div class="infoHeader e454"><h4>Grades: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        N/A<br>
+                                    </p>
+                                </div>
+
+                                <!--Notes-->
+                                <div class="infoHeader e454"><h4>Notes: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        N/A
+                                    </p>
+                                    
+                                </div>
+                        </div> <!-- Class Info End -->
+                    </div><!-- Info Wrapper End -->
+
+                    <ul>
+                        <li>
+                            <a href="https://howdy.tamu.edu/Inside/HR2504/PDFs/SYL_201431_22638.pdf?14:54:09" target="_blank" class="class e454">Syllabus</a>
+                        </li>
+                      
+                    </ul>
+
+                    <!--Electronics-->
+                    <p class="class ctitle e474" id="e474">
+                        474 - Designing for the Web
+                    </p>
+
+                     <!--Info Wrapper-->
+                    <div class="e474 info-wrapper">
+                        <!--Class Info-->
+                        <div class="class info">
+                                <!--Proffessor Info-->
+                                <div class="infoHeader e474"><h4>Prof: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        <u>Howard Eilers</u><br>
+                                        Langford C 306-I<br>
+                                        Tel: (979)229-5578<br>
+                                        Email: h-eilers@tamu.edu<br>
+                                    </p>
+                                </div>
+
+                                <!--TA Info-->
+                                <div class="infoHeader e482"><h4>TA: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        <u>N/A</u><br>
+                                    </p>
+                                </div>
+
+                                <!--Grade Info-->
+                                <div class="infoHeader e482"><h4>Grades: </h4></div>
+                                <div class="infoSection">
+                                    <p>
+                                        Website 20%<br>
+                                        CSS Zengarden20%<br>
+                                        Creative projects 20%<br>
+                                        
+                                    </p>
+                                </div>
+
+                                <!--Notes-->
+                                <!--<div class="infoHeader e482"><h4>Notes: </h4></div>-->
+                                <div class="infoSection">
+                                    <!--Insert Class Notes Here-->
+                                </div>
+                        </div> <!-- Class Info End -->
+                    </div><!-- Info Wrapper End -->
+
+                    <ul>
+                        <li>
+                            <a href="https://howdy.tamu.edu/Inside/HR2504/PDFs/SYL_201431_14717.pdf?14:54:09" target="_blank" class="class e474">Syllabus</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div><!-- Class Documents End -->
+
+        <!--Online Resources-->
+            <div class="module left" id="recources">
+                <div class="module-content">
+                    <b class="listTitle">Resources</b>
+                    <ul>
+                        <!--Elearning-->
+                        <li>
+                            <a href="http://elearning.tamu.edu/" target="_blank">Elearning</a>
+                        </li>
+
+                        <!--ECampus-->
+                        <li>
+                            <a href="http://ecampus.tamu.edu/" target="_blank">ECampus</a>
+                        </li>
+
+                        <!--Piazza-->
+                        <li>
+                            <a href="https://piazza.com" target="_blank">Piazza</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- Online Resources End -->
+
+
+        </section>
+    </body>
+</html>
